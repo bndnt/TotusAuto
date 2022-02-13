@@ -1,0 +1,347 @@
+.title {
+}
+
+.subtitle {
+}
+
+.text {
+  p + p {
+    margin-top: 15px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.input {
+  &::placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.textarea {
+  &::placeholder {
+    transition: opacity 0.3s ease;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+
+  transition: 0.3s;
+
+  &:disabled {
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: var(--color-main);
+  }
+
+  &--blue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 24px;
+    background-color: var(--color-base);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-main);
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      color: var(--color-main);
+      background-color: #0066e3;
+    }
+  }
+
+  &--transparent {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 24px;
+    background-color: transparent;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-dark4);
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      color: var(--color-red);
+      background-color: transparent;
+    }
+  }
+  &--muted {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 24px;
+    background-color: var(--color-muted);
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-base);
+    border: none;
+    transition: 0.3s;
+    &:hover {
+      color: var(--color-main);
+      background-color: #0066e3;
+      .icon {
+        svg {
+          fill: var(--color-main);
+        }
+      }
+    }
+    .icon {
+      margin-right: 4px;
+      width: 16px;
+      height: 16px;
+      svg {
+        fill: var(--color-base);
+      }
+    }
+  }
+  &--done {
+    pointer-events: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-additional2);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    .icon {
+      margin-right: 4px;
+      width: 20px;
+      height: 20px;
+      svg {
+        fill: var(--color-additional2);
+      }
+    }
+  }
+  &--big {
+    font-size: 16px;
+    line-height: 150%;
+    padding: 16px 24px;
+  }
+  &--next {
+    padding: 16px 32px;
+  }
+  &--border {
+    border: 1px solid blue;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    transition: 0.3s linear;
+    svg {
+      transition: 0.3s linear;
+    }
+    &:hover {
+
+      color: #fff;
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+//modal
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.7);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    .modal__content {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+  &.modal-mob {
+    @media (max-width: $widthm) {
+      left: -100%;
+      transition: 0.3s;
+      .modal__content {
+        transform: none;
+        opacity: 1;
+      }
+      &.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        .modal__content {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    }
+  }
+  &__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__body {
+    width: 100%;
+    height: 100%;
+    // min-height: 100vh;
+    // min-height: calc(var(--vh, 1vh) * 100);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+
+    @media all and (max-width: $widthm) {
+      padding: 0;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 929px;
+    background: var(--color-main);
+    margin: 0 auto;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    transform: translate(0px, -100%);
+    padding: 20px 15px;
+    border-radius: 32px;
+    position: relative;
+
+    &--image {
+      position: relative;
+      overflow: hidden;
+      padding: 56px 30px 56px 181px;
+      &::before {
+        left: 0px;
+        top: 0;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 181px;
+        background: url(../img/modal-image.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+        position: absolute;
+        @media (max-width: $widthSpc) {
+          width: 174px;
+        }
+        @media (max-width: $widthTablet) {
+          width: 160px;
+        }
+        @media (max-width: $widthTabletM) {
+          display: none;
+        }
+      }
+    }
+  }
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    svg {
+      fill: var(--color-dark4);
+    }
+    &:hover {
+      svg {
+        fill: var(--color-dark);
+      }
+    }
+    z-index: 101;
+  }
+
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 101;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1041px;
+    width: 100%;
+    @media (max-width: $widthSpc) {
+      max-width: 895px;
+    }
+    @media (max-width: $widthTablet) {
+      max-width: 100%;
+      width: calc(100% - 48px);
+    }
+    @media (max-width: $widthTabletM) {
+      display: none;
+    }
+  }
+
+  &__arrow {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--color-main);
+    border-radius: 50%;
+    transition: 0.3s;
+    svg {
+      fill: var(--color-main);
+    }
+    &:hover {
+      border-color: var(--color-base);
+      svg {
+        fill: var(--color-base);
+      }
+    }
+  }
+}

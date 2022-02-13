@@ -1,0 +1,15 @@
+//font-family: 'Roboto', sans-serif;
+
+
+@import 'reset';
+@import 'vars';
+@import 'global';
+@import 'fonts';
+@import 'animations';
+@import 'components';
+@import 'modules/header';
+@import 'modules/footer';
+@import 'modules/modals';
+@import 'modules/hamburger';
+
+@import 'pages/home/home';

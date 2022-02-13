@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('modules/link.html',{ 'title': 'Главная' })
+<body>
+@include('modules/header.html', {'mod-class': 'header-lk-user' })
+
+<main class="main">
+  @include('home/_index.html')
+</main>
+@include('modules/footer.html')
+@include('modules/script.html')
+</body>
+</html>

@@ -1,0 +1,146 @@
+.top {
+  transition: all 0.3s;
+  &__hamburger {
+    display: none;
+    @media (max-width: $widthTablet) {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color:rgba(224, 224, 224, 1);
+      left: -110%;
+      top: 0;
+      padding: 60px;
+      z-index: 7;
+    }
+    @media (max-width:$widthTabletM){
+      top: 0;
+      padding: 60px 20px 40px 60px;
+    }
+    @media (max-width: $widthm){
+      padding: 60px 20px 40px 20px;
+
+    }
+    ul {
+      margin-bottom: 15px;
+      @media (max-width: $widthm){
+        margin-top: 15px;
+      }
+    }
+
+    li {
+      padding: 15px 20px;
+      @media (max-width: $widthm){
+        padding: 12px 20px;
+      }
+    }
+
+    a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 16px;
+      color: #000000;
+      transition: all .3s;
+      @media (max-width: $widthm){
+        font-size: 16px;
+      }
+      &:hover{
+        color: var(--color-accent);
+      }
+
+    }
+  }
+}
+.top__hamburger.active{
+  transition: all 0.3s;
+  left: 0;
+
+}
+.mobile {
+  &__menu {
+    z-index: 10;
+    margin-right: 43px;
+    display: none;
+    @media (max-width: $widthTablet){
+      display: block;
+    }
+    @media (max-width:$widthTabletM){
+      margin-right: 30px;
+    }
+    @media (max-width:$widthm){
+
+    }
+  }
+}
+.mobile__menu_toggle.active {
+
+}
+
+#mobile_menu_toggle.active {
+  z-index: 6;
+  width: 13px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mobile__menu-toggle {
+  position: relative;
+  width: 13px;
+  height: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__menu a span:nth-child(1) {
+  width: 21px;
+  height: 3px;
+  display: block;
+  background: black;
+  transition: ease 300ms;
+}
+
+.mobile__menu a.active span:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  transition:  300ms;
+  background-color:black;
+}
+
+.mobile__menu a span:nth-child(2) {
+  width: 21px;
+  height: 3px;
+  display: block;
+  margin: 3px 0;
+  background-color:black;
+}
+
+.mobile__menu a.active span:nth-child(2) {
+  opacity: 0;
+  background-color: black;
+}
+
+.mobile__menu a span:nth-child(3) {
+  width: 21px;
+  height: 3px;
+  display: block;
+  background: var(--darck-color);
+  transition:  300ms;
+  background-color: black;
+}
+
+.mobile__menu a.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  transition:  300ms;
+  background-color:black;
+}
+.mobile__menu:hover{
+  a span{
+    background-color: var( --color-accent);
+  }
+}
