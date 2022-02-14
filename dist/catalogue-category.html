@@ -30,7 +30,7 @@
    <title>Главная</title>
 </head>
 
-<body>
+<body style="background: #FAFAFA;">
 
    <header class="header header-lk-user">
       <div class="top">
@@ -359,45 +359,191 @@
             </div>
          </nav>
 
-         <div class="home-page-content">
+         <div class="home-page-content catalogue-category">
             <div class="home-page-content__wrapper">
                <div class="container">
                   <div class="home-page-content__flex">
-                     <div class="home-page-filter">
-                        <form class="home-page-filter__form">
-                           <div class="select js-select">
-                              <input class="select__input js-select__input" type="hidden" name="">
-                              <div class="select__head js-select__head">Марка авто</div>
-                              <ul class="select__list js-select__list" style="display: none;">
-                                 <li class="select__item js-select__item">Марка авто</li>
-                                 <li class="select__item js-select__item">Марка авто</li>
-                                 <li class="select__item js-select__item">Марка авто Марка авто Марка авто</li>
-                              </ul>
+                     <div class="catalogue-category__right">
+                        <div class="home-page-filter">
+                           <form class="home-page-filter__form">
+                              <div class="select js-select">
+                                 <input class="select__input js-select__input" type="hidden" name="">
+                                 <div class="select__head js-select__head">Марка авто</div>
+                                 <ul class="select__list js-select__list" style="display: none;">
+                                    <li class="select__item js-select__item">Марка авто</li>
+                                    <li class="select__item js-select__item">Марка авто</li>
+                                    <li class="select__item js-select__item">Марка авто Марка авто Марка авто</li>
+                                 </ul>
+                              </div>
+                              <div class="home-page-filter__input">
+                                 <input type="text" placeholder="Модель авто">
+                              </div>
+                              <div class="home-page-filter__input">
+                                 <input type="text" placeholder="Вин код">
+                              </div>
+                              <div class="home-page-filter__input">
+                                 <input type="text" placeholder="Вид запчасти">
+                              </div>
+                              <div class="home-page-filter__cover-btn">
+                                 <button class="home-page-filter__btn">
+                                    Показать
+                                 </button>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="catalogue-category-seen-goods">
+                           <div class="catalogue-category-seen-goods__title ">
+                              Просмотренные
+                              <span class="span-accent">товары</span>
                            </div>
-                           <div class="home-page-filter__input">
-                              <input type="text" placeholder="Модель авто">
+                           <div class="swiper catalogue-category-seen-goods-slider js-catalogue-category-seen-goods-slider">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                    <div class="catalogue-category-seen-goods-slide home-page-latest-arrivals__block">
+                                       <div class="home-page-latest-arrivals__image">
+                                          <a href="#">
+                                             <img src="img/latest-arrivals1.jpg" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__article">
+                                          <span>Артикул: </span>
+                                          <span> 54574573D</span>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__description">
+                                          <a href="#">
+                                             Мотор вентилятора охлаждения лев
+                                             Acura MDX 07-13
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__available">
+                                          <div class="home-page-latest-arrivals__available-icon">
+                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                             </svg>
+                                          </div>
+                                          <div class="home-page-latest-arrivals__available-text">
+                                             В наличии
+                                          </div>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__block-bottom">
+                                          <div class="home-page-latest-arrivals__price">
+                                             <span>1923.00</span>
+                                             <span class="home-page-latest-arrivals__currency">грн</span>
+                                          </div>
+                                          <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket">
+                                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                                <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                                <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <div class="catalogue-category-seen-goods-slide home-page-latest-arrivals__block">
+                                       <div class="home-page-latest-arrivals__image">
+                                          <a href="#">
+                                             <img src="img/latest-arrivals1.jpg" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__article">
+                                          <span>Артикул: </span>
+                                          <span> 54574573D</span>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__description">
+                                          <a href="#">
+                                             Мотор вентилятора охлаждения лев
+                                             Acura MDX 07-13
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__available">
+                                          <div class="home-page-latest-arrivals__available-icon">
+                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                             </svg>
+                                          </div>
+                                          <div class="home-page-latest-arrivals__available-text">
+                                             В наличии
+                                          </div>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__block-bottom">
+                                          <div class="home-page-latest-arrivals__price">
+                                             <span>1923.00</span>
+                                             <span class="home-page-latest-arrivals__currency">грн</span>
+                                          </div>
+                                          <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket">
+                                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                                <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                                <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </div>
+
+                                 </div>
+                                 <div class="swiper-slide">
+                                    <div class="catalogue-category-seen-goods-slide home-page-latest-arrivals__block">
+                                       <div class="home-page-latest-arrivals__image">
+                                          <a href="#">
+                                             <img src="img/latest-arrivals1.jpg" alt="img">
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__article">
+                                          <span>Артикул: </span>
+                                          <span> 54574573D</span>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__description">
+                                          <a href="#">
+                                             Мотор вентилятора охлаждения лев
+                                             Acura MDX 07-13
+                                          </a>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__available">
+                                          <div class="home-page-latest-arrivals__available-icon">
+                                             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                             </svg>
+                                          </div>
+                                          <div class="home-page-latest-arrivals__available-text">
+                                             В наличии
+                                          </div>
+                                       </div>
+                                       <div class="home-page-latest-arrivals__block-bottom">
+                                          <div class="home-page-latest-arrivals__price">
+                                             <span>1923.00</span>
+                                             <span class="home-page-latest-arrivals__currency">грн</span>
+                                          </div>
+                                          <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket">
+                                             <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                                <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                                <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                             </svg>
+                                          </button>
+                                       </div>
+                                    </div>
+
+                                 </div>
+
+                              </div>
                            </div>
-                           <div class="home-page-filter__input">
-                              <input type="text" placeholder="Вин код">
-                           </div>
-                           <div class="home-page-filter__input">
-                              <input type="text" placeholder="Вид запчасти">
-                           </div>
-                           <div class="home-page-filter__cover-btn">
-                              <button class="home-page-filter__btn">
-                                 Показать
-                              </button>
-                           </div>
-                        </form>
+                           <div class="swiper-pagination catalogue-category-seen-goods-swiper-pagination js-catalogue-category-seen-goods-swiper-pagination"></div>
+
+
+                        </div>
                      </div>
+
                      <div class="home-page-content-left ">
                         <div class="home-page-latest-arrivals__content">
-                           <div class="title">
-                              Последние поступления
-                              <span class="span-accent">запчастей</span>
+                           <div class="title catalogue-category-title align-left">
+                              Тормозная система и
+                              <span class="span-accent">трансмиссия</span>
                            </div>
-                           <div class="home-page-latest-arrivals__subtitle subtitle">
-                              Новые и б/у запчасти по оптимальным ценам с гарантией качества
+                           <div class="home-page-latest-arrivals__subtitle catalogue-category-subtitle subtitle align-left">
+                              Новые и б/у запчасти по оптимальным ценам с гарантией качества Тотус Авто
                            </div>
                            <div class="home-page-latest-arrivals__flex">
                               <div class="home-page-latest-arrivals__block">
@@ -481,6 +627,14 @@
                                  </div>
                               </div>
                               <div class="home-page-latest-arrivals__block">
+                                 <div class="catalogue-category__flex-absolute">
+                                    <div class="catalogue-category__sale">
+                                       Акция
+                                    </div>
+                                    <div class="catalogue-category__discount">
+                                       -10%
+                                    </div>
+                                 </div>
                                  <div class="home-page-latest-arrivals__image">
                                     <a href="#">
                                        <img src="img/latest-arrivals3.jpg" alt="img">
@@ -495,6 +649,7 @@
                                        Дверь передняя левая 15 Mitsubishi Outlander (GF)
                                     </a>
                                  </div>
+
                                  <div class="home-page-latest-arrivals__available">
                                     <div class="home-page-latest-arrivals__available-icon">
                                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -505,6 +660,7 @@
                                        В наличии
                                     </div>
                                  </div>
+
                                  <div class="home-page-latest-arrivals__block-bottom">
                                     <div class="home-page-latest-arrivals__price">
                                        <span>1923.00</span>
@@ -621,6 +777,11 @@
                                     <div class="home-page-latest-arrivals__available-text">
                                        В наличии
                                     </div>
+                                 </div>
+                                 <div class="catalogue-category__old-price">
+                                    <span class="catalogue-category__old-price-span">
+                                       2000.00
+                                   </span>
                                  </div>
                                  <div class="home-page-latest-arrivals__block-bottom">
                                     <div class="home-page-latest-arrivals__price">
@@ -872,9 +1033,247 @@
                                     </button>
                                  </div>
                               </div>
+                              <div class="home-page-latest-arrivals__block">
+                                 <div class="home-page-latest-arrivals__image">
+                                    <a href="#">
+                                       <img src="img/latest-arrivals10.jpg" alt="img">
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__article">
+                                    <span>Артикул: </span>
+                                    <span> 8794030E90A1</span>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__description">
+                                    <a href="#">
+                                       Зеркало левое электр 11 pin. Lexus GS (L10) 2012-2018
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__available">
+                                    <div class="home-page-latest-arrivals__available-icon">
+                                       <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                       </svg>
+                                    </div>
+                                    <div class="home-page-latest-arrivals__available-text">
+                                       В наличии
+                                    </div>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__block-bottom">
+                                    <div class="home-page-latest-arrivals__price">
+                                       <span>1923.00</span>
+                                       <span class="home-page-latest-arrivals__currency">грн</span>
+                                    </div>
+                                    <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket">
+                                       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                          <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                          <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="home-page-latest-arrivals__block">
+                                 <div class="home-page-latest-arrivals__image">
+                                    <a href="#">
+                                       <img src="img/latest-arrivals11.jpg" alt="img">
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__article">
+                                    <span>Артикул: </span>
+                                    <span> 57704SG030</span>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__description">
+                                    <a href="#">
+                                       Бампер передний в сборе 16-18 Subaru Forester (SJ) 2012-2018
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__available">
+                                    <div class="home-page-latest-arrivals__available-icon">
+                                       <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                       </svg>
+                                    </div>
+                                    <div class="home-page-latest-arrivals__available-text">
+                                       В наличии
+                                    </div>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__block-bottom">
+                                    <div class="home-page-latest-arrivals__price">
+                                       <span>1923.00</span>
+                                       <span class="home-page-latest-arrivals__currency">грн</span>
+                                    </div>
+                                    <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket">
+                                       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                          <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                          <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="home-page-latest-arrivals__block">
+                                 <div class="home-page-latest-arrivals__image">
+                                    <a href="#">
+                                       <img src="img/latest-arrivals12.jpg" alt="img">
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__article">
+                                    <span>Артикул: </span>
+                                    <span> 33100TBAA11</span>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__description">
+                                    <a href="#">
+                                       Фара правая с эл. коректором LED НОВАЯ Honda Civic 4D (FC) 2015
+                                    </a>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__available">
+                                    <div class="home-page-latest-arrivals__available-icon">
+                                       <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M1 6.5L3.5 10L13 1" stroke="#27AE60" stroke-width="2" />
+                                       </svg>
+                                    </div>
+                                    <div class="home-page-latest-arrivals__available-text">
+                                       В наличии
+                                    </div>
+                                 </div>
+                                 <div class="home-page-latest-arrivals__block-bottom">
+                                    <div class="home-page-latest-arrivals__price">
+                                       <span>1923.00</span>
+                                       <span class="home-page-latest-arrivals__currency">грн</span>
+                                    </div>
+                                    <button class="home-page-latest-arrivals__basket js-home-page-latest-arrivals__basket active">
+                                       <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M3.54175 6.02084C3.54175 5.73904 3.65369 5.46879 3.85295 5.26953C4.0522 5.07028 4.32246 4.95834 4.60425 4.95834H5.39475C6.74058 4.95834 7.54808 5.86359 8.0085 6.70509C8.31591 7.26609 8.53833 7.91634 8.71258 8.50567C8.75971 8.50195 8.80697 8.50006 8.85425 8.5H26.5597C27.7356 8.5 28.5856 9.62484 28.2626 10.7568L25.6729 19.8362C25.4407 20.6505 24.9495 21.3671 24.2737 21.8773C23.5978 22.3875 22.7741 22.6636 21.9272 22.6638H13.5009C12.6474 22.6639 11.8174 22.3836 11.1387 21.8661C10.4599 21.3485 9.96987 20.6224 9.74391 19.7993L8.66725 15.8723L6.88225 9.85434L6.88083 9.843C6.65983 9.03975 6.453 8.2875 6.14416 7.7265C5.84808 7.18109 5.61008 7.08334 5.39616 7.08334H4.60425C4.32246 7.08334 4.0522 6.97139 3.85295 6.77214C3.65369 6.57288 3.54175 6.30263 3.54175 6.02084ZM10.7285 15.3567L11.7924 19.2369C12.0049 20.0048 12.7033 20.5388 13.5009 20.5388H21.9272C22.3122 20.5388 22.6866 20.4134 22.9939 20.1816C23.3011 19.9497 23.5245 19.6241 23.6301 19.2539L26.0908 10.625H9.32883L10.7087 15.2816L10.7285 15.3567Z" />
+                                          <path d="M15.5834 26.9167C15.5834 27.6681 15.2849 28.3888 14.7536 28.9201C14.2222 29.4515 13.5015 29.75 12.7501 29.75C11.9986 29.75 11.278 29.4515 10.7466 28.9201C10.2153 28.3888 9.91675 27.6681 9.91675 26.9167C9.91675 26.1652 10.2153 25.4446 10.7466 24.9132C11.278 24.3818 11.9986 24.0833 12.7501 24.0833C13.5015 24.0833 14.2222 24.3818 14.7536 24.9132C15.2849 25.4446 15.5834 26.1652 15.5834 26.9167ZM13.4584 26.9167C13.4584 26.7288 13.3838 26.5486 13.2509 26.4158C13.1181 26.283 12.9379 26.2083 12.7501 26.2083C12.5622 26.2083 12.3821 26.283 12.2492 26.4158C12.1164 26.5486 12.0417 26.7288 12.0417 26.9167C12.0417 27.1045 12.1164 27.2847 12.2492 27.4175C12.3821 27.5504 12.5622 27.625 12.7501 27.625C12.9379 27.625 13.1181 27.5504 13.2509 27.4175C13.3838 27.2847 13.4584 27.1045 13.4584 26.9167Z" />
+                                          <path d="M25.5002 26.9167C25.5002 27.6681 25.2017 28.3888 24.6703 28.9201C24.1389 29.4515 23.4183 29.75 22.6668 29.75C21.9154 29.75 21.1947 29.4515 20.6634 28.9201C20.132 28.3888 19.8335 27.6681 19.8335 26.9167C19.8335 26.1652 20.132 25.4446 20.6634 24.9132C21.1947 24.3818 21.9154 24.0833 22.6668 24.0833C23.4183 24.0833 24.1389 24.3818 24.6703 24.9132C25.2017 25.4446 25.5002 26.1652 25.5002 26.9167ZM23.3752 26.9167C23.3752 26.7288 23.3005 26.5486 23.1677 26.4158C23.0349 26.283 22.8547 26.2083 22.6668 26.2083C22.479 26.2083 22.2988 26.283 22.166 26.4158C22.0331 26.5486 21.9585 26.7288 21.9585 26.9167C21.9585 27.1045 22.0331 27.2847 22.166 27.4175C22.2988 27.5504 22.479 27.625 22.6668 27.625C22.8547 27.625 23.0349 27.5504 23.1677 27.4175C23.3005 27.2847 23.3752 27.1045 23.3752 26.9167Z" />
+                                       </svg>
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="catalogue-category__ul-btn">
+                              <li class="catalogue-category__btn-li active">
+                                 <a href="#">
+                                    1
+                                 </a>
+                              </li>
+                              <li class="catalogue-category__btn-li">
+                                 <a href="#">
+                                    2
+                                 </a>
+                              </li>
+                              <li class="catalogue-category__btn-li catalogue-category__btn-li-no-margin">
+                                 <a href="#">
+                                    3
+                                 </a>
+                              </li>
+                              <li class="catalogue-category__btn-li-dots">
+                                 ...
+                              </li>
+                              <li class="catalogue-category__btn-li">
+                                 <a href="#">
+                                    15
+                                 </a>
+                              </li>
+                              <li class="catalogue-category__btn-li">
+                                 <a href="#">
+                                    16
+                                 </a>
+                              </li>
                            </div>
                         </div>
+                        <div class="catalogue-category-selling">
+                           <div class="title catalogue-category-title align-left catalogue-category-selling__main-title">
+                              Продажа Б/У запчастей для
+                              <span class="span-accent">Nissan - Тотус Авто</span>
+                           </div>
+                           <div class=" catalogue-category-selling__subtitle">
+                              Новые и б/у запчасти по оптимальным ценам с гарантией качества
+                           </div>
+                           <div class="catalogue-category-selling__flex">
+                              <div class="catalogue-category-selling__image">
+                                 <img src="img/seo.jpg" alt="img">
+                              </div>
+                              <div class="catalogue-category-selling__info">
+                                 <div class="catalogue-category-selling__title">
+                                    Новые и б/у запчасти с гарантией качества
+                                 </div>
+                                 <div class="catalogue-category-selling__text">
+                                    <p>Возможность без длительных ожиданий и больших затрат восстановить свое авто и снова сесть за руль. Заказать новые запчасти из Японии тоже возможно, только на это уйдет много времени и денег. Тотус Авто предлагает детали, начиная от стартера и заканчивая передней дверью для субару или мицубиси. Главное, что это не перекуп. Мы не закупаем у других компаний запчасти, а самостоятельно занимаемся разборкой авто.</p>
+                                    <p>Возможность без длительных ожиданий и больших затрат восстановить свое авто и снова сесть за руль. </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
+         <div class="home-page-contacts">
+            <div class="home-page-contacts__wrapper">
+               <div class="container">
+                  <div class="home-page-contacts__flex">
+                     <div class="home-page-contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2745.3887497801593!2d30.722611015593085!3d46.520208679127556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c62fd8352486d9%3A0x50f9ebe50624da07!2z0LLRg9C70LjRhtGPINCe0YLQsNC80LDQvdCwINCT0L7Qu9C-0LLQsNGC0L7Qs9C-LCAxNTUsINCe0LTQtdGB0LAsINCe0LTQtdGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2NTAwMA!5e0!3m2!1sru!2sua!4v1644689116995!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                     </div>
+                     <div class="home-page-contacts__info">
+                        <div class="home-page-contacts__title">
+                           Наши конакты
+                        </div>
+                        <div class="home-page-contacts__info-flex home-page-contacts__info-flex-first">
+                           <div class="home-page-contacts__icon">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M9 0.75C10.7902 0.75 12.5071 1.46116 13.773 2.72703C15.0388 3.9929 15.75 5.70979 15.75 7.5C15.75 10.2945 13.62 13.2225 9.45 16.35C9.32018 16.4474 9.16228 16.5 9 16.5C8.83772 16.5 8.67982 16.4474 8.55 16.35C4.38 13.2225 2.25 10.2945 2.25 7.5C2.25 5.70979 2.96116 3.9929 4.22703 2.72703C5.4929 1.46116 7.20979 0.75 9 0.75ZM9 5.25C8.40326 5.25 7.83097 5.48705 7.40901 5.90901C6.98705 6.33097 6.75 6.90326 6.75 7.5C6.75 8.09674 6.98705 8.66903 7.40901 9.09099C7.83097 9.51295 8.40326 9.75 9 9.75C9.59674 9.75 10.169 9.51295 10.591 9.09099C11.0129 8.66903 11.25 8.09674 11.25 7.5C11.25 6.90326 11.0129 6.33097 10.591 5.90901C10.169 5.48705 9.59674 5.25 9 5.25Z" fill="#EB5757" />
+                              </svg>
+                           </div>
+                           <div class="home-page-contacts__address">
+                              Одесса ул. Отамана Головатого, 155а
+                           </div>
+                        </div>
+                        <div class="home-page-contacts__info-flex home-page-contacts__info-flex-second">
+                           <div class="home-page-contacts__icon">
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M16 8C16 10.1217 15.1571 12.1566 13.6569 13.6569C12.1566 15.1571 10.1217 16 8 16C5.87827 16 3.84344 15.1571 2.34315 13.6569C0.842855 12.1566 0 10.1217 0 8C0 5.87827 0.842855 3.84344 2.34315 2.34315C3.84344 0.842855 5.87827 0 8 0C10.1217 0 12.1566 0.842855 13.6569 2.34315C15.1571 3.84344 16 5.87827 16 8ZM8 3.5C8 3.36739 7.94732 3.24021 7.85355 3.14645C7.75979 3.05268 7.63261 3 7.5 3C7.36739 3 7.24021 3.05268 7.14645 3.14645C7.05268 3.24021 7 3.36739 7 3.5V9C7.00003 9.08813 7.02335 9.17469 7.06761 9.25091C7.11186 9.32712 7.17547 9.39029 7.252 9.434L10.752 11.434C10.8669 11.4961 11.0014 11.5108 11.127 11.4749C11.2525 11.4391 11.3591 11.3556 11.4238 11.2422C11.4886 11.1288 11.5065 10.9946 11.4736 10.8683C11.4408 10.7419 11.3598 10.6334 11.248 10.566L8 8.71V3.5Z" fill="#EB5757" />
+                              </svg>
+                           </div>
+                           <div class="home-page-contacts__title-schedule">
+                              <div class="home-page-contacts__schedule">
+                                 <div class="home-page-contacts__days">пн - пт</div>
+                                 <div class="home-page-contacts__time">
+                                    <span>09:00 </span> <span>до </span> <span>18:00</span>
+                                 </div>
+                              </div>
+                              <div class="home-page-contacts__schedule">
+                                 <div class="home-page-contacts__days">сб</div>
+                                 <div class="home-page-contacts__time">
+                                    <span>09:00  </span>
+                                    <span>до</span>
+                                    <span>15:00</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="home-page-contacts__info-flex home-page-contacts__info-flex-third">
+                           <div class="home-page-contacts__icon">
+                              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M7.68205 10.3361C8.69284 11.3615 9.91586 12.1532 11.2652 12.6555L13.0907 11.2029C13.1448 11.1656 13.209 11.1457 13.2747 11.1457C13.3404 11.1457 13.4046 11.1656 13.4587 11.2029L16.8482 13.3867C16.9769 13.4641 17.0858 13.5703 17.1664 13.697C17.247 13.8237 17.297 13.9674 17.3125 14.1167C17.328 14.266 17.3085 14.4169 17.2557 14.5575C17.2028 14.698 17.118 14.8243 17.008 14.9265L15.4198 16.4953C15.1923 16.7201 14.9128 16.885 14.6061 16.9754C14.2994 17.0658 13.9751 17.0789 13.6621 17.0134C10.54 16.3686 7.66227 14.8585 5.35783 12.6555C3.10454 10.4307 1.54527 7.59978 0.869175 4.50622C0.802386 4.19809 0.816326 3.87792 0.909644 3.57676C1.00296 3.2756 1.17249 3.00365 1.40181 2.78726L3.04813 1.19905C3.15001 1.09435 3.27425 1.01406 3.41156 0.964192C3.54886 0.914319 3.69567 0.896155 3.84099 0.91106C3.98631 0.925964 4.12637 0.973551 4.25069 1.05026C4.37502 1.12696 4.48037 1.2308 4.55888 1.35399L6.81531 4.69991C6.85423 4.75245 6.87524 4.8161 6.87524 4.88149C6.87524 4.94687 6.85423 5.01053 6.81531 5.06307L5.32878 6.84981C5.84474 8.17217 6.64861 9.36308 7.68205 10.3361V10.3361Z" fill="#EB5757" />
+                              </svg>
+
+                           </div>
+                           <div class="home-page-contacts__tel">
+                              <a href="tel:+380689000000">+380 68 900 00 00</a>
+                              <a href="tel:+380689000000">+380 68 900 00 00</a>
+                           </div>
+                        </div>
+                        <button class="home-page-contacts__btn">
+                           <span class="home-page-contacts__btn-icon"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9L23 9V7L0 7L0 9Z" fill="white"/></svg>
+                            </span>
+                           <span class="home-page-contacts__btn-text">
+                                Заказать обратный звонок
+                            </span>
+                        </button>
                      </div>
                   </div>
                </div>

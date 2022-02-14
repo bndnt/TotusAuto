@@ -109,3 +109,15 @@ var swiper2 = new Swiper(".js-home-page-brands-slider", {
   // mousewheel: true,
   // keyboard: true,
 });
+
+var swiper3 = new Swiper(".js-catalogue-category-seen-goods-slider", {
+  slidesPerView: 1,
+  autoplay: {
+    delay: 3000,
+  },
+  freeMode: true,
+  pagination: {
+    el: ".js-catalogue-category-seen-goods-swiper-pagination",
+    clickable: true,
+  },
+});
