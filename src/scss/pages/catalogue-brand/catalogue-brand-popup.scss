@@ -1,0 +1,107 @@
+.catalogue-brand-popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.21);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  max-width: 992px;
+  width: 100%;
+  height: 552px;
+  z-index: 21;
+  display: none;
+  @media (max-width: $widthm){
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  &.active{
+    display: block;
+
+  }
+  &__wrapper{
+    position: relative;
+    padding: 26px 32px;
+    height: 100%;
+
+    &:after {
+      opacity: 0.7;
+      display: block;
+      content: '';
+      position: absolute;
+      background-image: url("../img/right-img.png");
+      width: 311px;
+      height: 336px;
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+      right: 0;
+      left: auto;
+      bottom: 16px;
+      @media (max-width: $widthSpc) {
+        //width: 200px;
+        //height: 210px;
+        //bottom: 16px;
+      }
+      @media (max-width: $widthTablet) {
+        width: 180px;
+        height: 190px;
+        bottom: 16px;
+      }
+      @media (max-width: $widthTabletM){
+        display: none;
+      }
+    }
+
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2F80ED;
+    mix-blend-mode: normal;
+    margin-bottom: 35px;
+    @media (max-width: $widthm){
+      font-size: 22px;
+      line-height: 120%;
+    }
+  }
+  &__content{
+    display: flex;
+    width: 100%;
+    @media (max-width: $widthm){
+      flex-wrap: wrap;
+    }
+  }
+  &__cross{
+    position: absolute;
+    left: auto;
+    top: 16px;
+    right: 13px;
+    cursor: pointer;
+    z-index: 3;
+    &:hover{
+      svg{
+        fill: var(--color-accent);
+
+      }
+    }
+    svg{
+      fill: #262626;
+      transition: all .3s;
+    }
+  }
+  .filters-popup-catalogue__ul-cover{
+    @media (max-width: $widthTablet){
+      width: 50%;
+      max-width: initial;
+    }
+    @media (max-width: $widthm){
+      width: 100%;
+    }
+  }
+}

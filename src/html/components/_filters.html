@@ -3,7 +3,235 @@
         <div class="container">
             <div class="filters__flex">
                 <div class="filters-left">
-                    <div class="filters-catalog">
+                    <div class="filters-popup-catalogue js-filters-popup-catalogue">
+                        <div class="filters-popup-catalogue__flex">
+                            <div class="filters-popup-catalogue__left">
+                                <div class="tab js-tab">
+                                    <button class="tablinks js-tablinks active" onclick="openTab(event, '11')">Двигатели</button>
+                                    <button class="tablinks js-tablinks" onclick="openTab(event, '22')">Салон</button>
+                                    <button class="tablinks js-tablinks" onclick="openTab(event, '33')">Кузов</button>
+                                    <button class="tablinks js-tablinks" onclick="openTab(event, '44')">Подвеска</button>
+                                    <button class="tablinks js-tablinks" onclick="openTab(event, '55')">Электрика</button>
+                                    <button class="tablinks js-tablinks" onclick="openTab(event, '66')">Тормозная система и трансмиссия</button>
+                                </div>
+                            </div>
+                            <div class="filters-popup-catalogue__right">
+                                <div id="11" class="tabcontent js-tabcontent" style="display: block">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div id="22" class="tabcontent js-tabcontent">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                2  Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="33" class="tabcontent js-tabcontent">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                3Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="44" class="tabcontent js-tabcontent">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                4Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="55" class="tabcontent js-tabcontent">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                5Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div id="66" class="tabcontent js-tabcontent">
+                                    <div class="filters-popup-catalogue__tabcontent">
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                6Двигатели в сборе без навесного оборудования
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Блок двигателя</a></li>
+                                                <li><a href="#">Головка двигателя</a></li>
+                                                <li><a href="#">Клапана</a></li>
+                                                <li><a href="#">Коленвал</a></li>
+                                                <li><a href="#">Распредвал</a></li>
+                                                <li><a href="#">Поршни с шарнирами</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="filters-popup-catalogue__ul-cover">
+                                            <div class="filters-popup-catalogue__ul-title">
+                                                Навесное оборудование
+                                            </div>
+                                            <ul class="filters-popup-catalogue__ul">
+                                                <li><a href="#">Топливный насос</a></li>
+                                                <li><a href="#">Форсунки</a></li>
+                                                <li><a href="#">Патрубки</a></li>
+                                                <li><a href="#">Расходомеры воздуха</a></li>
+                                                <li><a href="#">Помпы</a></li>
+                                                <li><a href="#">Компрессор кондиционера</a></li>
+                                                <li><a href="#">Генератор</a></li>
+                                                <li><a href="#">Стартер</a></li>
+                                                <li><a href="#">Выхлопные трубы, катализаторы </a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filters-catalog js-filters-catalog">
+
                         <div class="filters-catalog__menu">
                             <a href="">
                                 <span></span>

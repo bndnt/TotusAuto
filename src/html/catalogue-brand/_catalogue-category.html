@@ -2,6 +2,8 @@
     @include('../components/_filters.html')
     <nav aria-label="breadcrumb" class="breadcrumb">
         <div class="container">
+            <div class="breadcrumb-cover">
+
             <ul>
                 <li><a href="">Тотус Авто</a></li>
                 <span class="span-space">/</span>
@@ -10,10 +12,13 @@
 
                 <li><span aria-current="current-page" class="current-page">Nissan</span></li>
             </ul>
+            </div>
         </div>
     </nav>
 
     @include('_catalogue-brand-content.html')
+    @include('_catalogue-brand-popup.html')
+    @include('../components/_bg.html')
 
 
     @include('../catalogue-category/_map-footer.html')

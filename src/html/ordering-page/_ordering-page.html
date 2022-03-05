@@ -1,10 +1,351 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="catalogue-category ordering-page">
+    @include('../components/_filters.html')
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <div class="container">
+            <div class="breadcrumb-cover">
+                <ul>
+                    <li><a href="">Тотус Авто</a></li>
+                    <span class="span-space">/</span>
+                    <li><span aria-current="current-page" class="current-page">Оформление заказа</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ordering-page-content">
+        <div class="ordering-page-content__wrapper">
+            <div class="container">
+                <div class="ordering-page-content__title">
+                    Оформление
+                    <span class="span-accent">заказа</span>
+                </div>
+                <div class="ordering-page-content__hidden">
+                    <div class="ordering-page-content__scroll">
+                        <div class="ordering-page-content__info-flex ordering-page-content__info-flex-title">
+                            <div class="ordering-page-content__info-title w17">
+                                Изображение
+                            </div>
+                            <div class="ordering-page-content__info-title w27">
+                                Наименование
+                            </div>
+                            <div class="ordering-page-content__info-title w17">
+                                Номенклатура
+                            </div>
+                            <div class="ordering-page-content__info-title w13">
+                                Кол-во
+                            </div>
+                            <div class="ordering-page-content__info-title w12">
+                                Цена <span>(грн)</span>
+                            </div>
+                            <div class="ordering-page-content__info-title w14">
+                                Итого
+                            </div>
+                        </div>
+                        <div class="ordering-page-content__info-flex ordering-page-content__info-flex-content">
+                            <div class="ordering-page-content-info__absolute">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="ordering-page-content-info__absolute-circle" cx="16" cy="16"
+                                            r="15.5"/>
+                                    <path class="ordering-page-content-info__absolute-path"
+                                          d="M10.2252 8.81099C10.0366 8.62883 9.78397 8.52803 9.52177 8.53031C9.25957 8.53259 9.00876 8.63776 8.82335 8.82317C8.63794 9.00858 8.53278 9.25939 8.5305 9.52158C8.52822 9.78378 8.62901 10.0364 8.81117 10.225L14.5862 16L8.81017 21.775C8.71466 21.8672 8.63848 21.9776 8.58607 22.0996C8.53366 22.2216 8.50607 22.3528 8.50492 22.4856C8.50377 22.6184 8.52907 22.75 8.57935 22.8729C8.62963 22.9958 8.70388 23.1075 8.79778 23.2014C8.89167 23.2953 9.00332 23.3695 9.12622 23.4198C9.24911 23.4701 9.38079 23.4954 9.51357 23.4942C9.64635 23.4931 9.77757 23.4655 9.89958 23.4131C10.0216 23.3607 10.1319 23.2845 10.2242 23.189L16.0002 17.414L21.7752 23.189C21.9638 23.3711 22.2164 23.4719 22.4786 23.4697C22.7408 23.4674 22.9916 23.3622 23.177 23.1768C23.3624 22.9914 23.4676 22.7406 23.4698 22.4784C23.4721 22.2162 23.3713 21.9636 23.1892 21.775L17.4142 16L23.1892 10.225C23.3713 10.0364 23.4721 9.78378 23.4698 9.52158C23.4676 9.25939 23.3624 9.00858 23.177 8.82317C22.9916 8.63776 22.7408 8.53259 22.4786 8.53031C22.2164 8.52803 21.9638 8.62883 21.7752 8.81099L16.0002 14.586L10.2252 8.80999V8.81099Z"/>
+                                </svg>
+
+                            </div>
+                            <div class="ordering-page-content__tablet-title">
+                                <a href="#">
+                                    Ступица передняя Toyota Auris (25748)
+
+                                </a>
+                            </div>
+                            <div class="ordering-page-content__info-title  w17">
+                                <div class="ordering-page-content__info-image">
+                                    <img src="img/add-product-popup.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-name w27">
+                                <div class="ordering-page-content-info-name__title">
+                                    Ступица передняя Toyota Auris (25748)
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Артикул:
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Номер по каталогу:
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Вин код:
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-number w17">
+                                <div class="ordering-page-content-info-name__right">
+                                    54574573D
+                                </div>
+                                <div class="ordering-page-content-info-name__right">
+                                    AS574573W
+                                </div>
+                                <div class="ordering-page-content-info-name__right">
+                                    2354574573K
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content-info-amount w13">
+                                <div class="card-page-top-info-buy__amount js-counter ordering-page-content-info-count">
+                                    <button data-direction="plus"
+                                            class="card-page-top-info-buy__counter-btn counter__btn js-counter__btn">
+                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 0L6 11" stroke="white"/>
+                                            <path d="M11.5 5.46838L0.5 5.46838" stroke="white"/>
+                                        </svg>
+                                    </button>
+                                    <input class="js-counter__value counter__value" value="1">
+                                    <button data-direction="minus"
+                                            class="card-page-top-info-buy__counter-btn counter__btn js-counter__btn">
+                                        <svg width="11" height="1" viewBox="0 0 11 1" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="11" y1="0.5" y2="0.5" stroke="white"/>
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content-info-price w12">
+                                1930.00
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-final w14">
+                                1930.00
+                            </div>
+                        </div>
+                        <div class="ordering-page-content__info-flex ordering-page-content__info-flex-content">
+                            <div class="ordering-page-content-info__absolute">
+                                <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="ordering-page-content-info__absolute-circle" cx="16" cy="16"
+                                            r="15.5"/>
+                                    <path class="ordering-page-content-info__absolute-path"
+                                          d="M10.2252 8.81099C10.0366 8.62883 9.78397 8.52803 9.52177 8.53031C9.25957 8.53259 9.00876 8.63776 8.82335 8.82317C8.63794 9.00858 8.53278 9.25939 8.5305 9.52158C8.52822 9.78378 8.62901 10.0364 8.81117 10.225L14.5862 16L8.81017 21.775C8.71466 21.8672 8.63848 21.9776 8.58607 22.0996C8.53366 22.2216 8.50607 22.3528 8.50492 22.4856C8.50377 22.6184 8.52907 22.75 8.57935 22.8729C8.62963 22.9958 8.70388 23.1075 8.79778 23.2014C8.89167 23.2953 9.00332 23.3695 9.12622 23.4198C9.24911 23.4701 9.38079 23.4954 9.51357 23.4942C9.64635 23.4931 9.77757 23.4655 9.89958 23.4131C10.0216 23.3607 10.1319 23.2845 10.2242 23.189L16.0002 17.414L21.7752 23.189C21.9638 23.3711 22.2164 23.4719 22.4786 23.4697C22.7408 23.4674 22.9916 23.3622 23.177 23.1768C23.3624 22.9914 23.4676 22.7406 23.4698 22.4784C23.4721 22.2162 23.3713 21.9636 23.1892 21.775L17.4142 16L23.1892 10.225C23.3713 10.0364 23.4721 9.78378 23.4698 9.52158C23.4676 9.25939 23.3624 9.00858 23.177 8.82317C22.9916 8.63776 22.7408 8.53259 22.4786 8.53031C22.2164 8.52803 21.9638 8.62883 21.7752 8.81099L16.0002 14.586L10.2252 8.80999V8.81099Z"/>
+                                </svg>
+
+                            </div>
+                            <div class="ordering-page-content__tablet-title">
+                                <a href="#">
+                                    Коробка передач МКПП 5 ступеней Honda Accord (CL/CM)
+                                </a>
+                            </div>
+                            <div class="ordering-page-content__info-title  w17">
+                                <div class="ordering-page-content__info-image">
+                                    <img src="img/add-product-popup.png" alt="img">
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-name w27">
+                                <div class="ordering-page-content-info-name__title">
+                                    Коробка передач МКПП 5 ступеней Honda Accord (CL/CM)
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Артикул:
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Номер по каталогу:
+                                </div>
+                                <div class="ordering-page-content-info-name__left">
+                                    Вин код:
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-number w17">
+                                <div class="ordering-page-content-info-name__right">
+                                    54574573D
+                                </div>
+                                <div class="ordering-page-content-info-name__right">
+                                    AS574573W
+                                </div>
+                                <div class="ordering-page-content-info-name__right">
+                                    2354574573K
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content-info-amount w13">
+                                <div class="card-page-top-info-buy__amount js-counter ordering-page-content-info-count">
+                                    <button data-direction="plus"
+                                            class="card-page-top-info-buy__counter-btn counter__btn js-counter__btn">
+                                        <svg width="12" height="11" viewBox="0 0 12 11" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6 0L6 11" stroke="white"/>
+                                            <path d="M11.5 5.46838L0.5 5.46838" stroke="white"/>
+                                        </svg>
+                                    </button>
+                                    <input class="js-counter__value counter__value" value="1">
+                                    <button data-direction="minus"
+                                            class="card-page-top-info-buy__counter-btn counter__btn js-counter__btn">
+                                        <svg width="11" height="1" viewBox="0 0 11 1" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="11" y1="0.5" y2="0.5" stroke="white"/>
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content-info-price w12">
+                                1930.00
+                            </div>
+                            <div class="ordering-page-content__info-title ordering-page-content__info-final w14">
+                                1930.00
+                            </div>
+                        </div>
+                        <div class="ordering-page-content__info-flex ordering-page-content__flex-total">
+                            <div class="ordering-page-content__info-title ordering-page-content__info-final ">
+                                Итого
+                            </div><div class="ordering-page-content__info-title ordering-page-content__info-final ">
+                                1930.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ordering-page-confirm">
+        <div class="ordering-page-confirm__wrapper">
+            <div class="container">
+                <div class="ordering-page-confirm__flex">
+                    <form class="ordering-page-confirm__form">
+                        <div class="ordering-page-confirm__info">
+                            <div class="ordering-page-confirm__info-title">
+                                Покупатель
+                            </div>
+                            <div class="ordering-page-confirm__inputs">
+                                <div class="ordering-page-confirm__input-cover">
+                                    <input type="text" id="input" required="required">
+                                    <label for="input">Имя<span>*</span></label>
+                                </div>
+                                <div class="ordering-page-confirm__input-cover">
+                                    <input type="text" id="input2" required="required">
+                                    <label for="input2">Фамилия <span>*</span></label>
+                                </div>
+                                <div class="ordering-page-confirm__input-cover">
+                                    <input type="text" id="input3" required="required">
+                                    <label for="input3">Номер телефона <span>*</span></label>
+                                </div>
+                                <div class="ordering-page-confirm__input-cover">
+                                    <input type="text" id="input4" required="required">
+                                    <label for="input4">Е-mail</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ordering-page-confirm__info">
+                            <div class="ordering-page-confirm__info-title">
+                                Способ доставки
+                            </div>
+                            <label class="ordering-page-confirm__label">
+                                <input class="ordering-page-confirm__radio-input" type="radio" name="a1">
+                                <span class="ordering-page-confirm__fake">
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Новая почта
+                                    </span>
+                            </label>
+                            <label class="ordering-page-confirm__label">
+                                <input class="ordering-page-confirm__radio-input" type="radio" name="a1">
+                                <span class="ordering-page-confirm__fake">
+
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Деливери
+                                    </span>
+                            </label>
+                            <label class="ordering-page-confirm__label">
+                                <input class="ordering-page-confirm__radio-input" type="radio" name="a1">
+                                <span class="ordering-page-confirm__fake">
+
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Самовывоз
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="ordering-page-confirm__info">
+                            <div class="ordering-page-confirm__info-title">
+                                Адрес доставки <span>*</span>
+                            </div>
+                            <textarea name="" id="1111"
+                                      class="ordering-page-confirm__textarea"
+                                      placeholder="Укажите адрес и номер отделения "></textarea>
+                        </div>
+                        <div class="ordering-page-confirm__info">
+                            <div class="ordering-page-confirm__info-title">
+                                Способ оплаты
+                            </div>
+                            <label class="ordering-page-confirm__label">
+                                <input type="radio" name="b">
+                                <span class="ordering-page-confirm__fake">
+
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Безналичным платежом
+                                    </span>
+                            </label>
+                            <label class="ordering-page-confirm__label">
+                                <input type="radio" name="b">
+                                <span class="ordering-page-confirm__fake">
+
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Наложенным платежом
+                                    </span>
+                            </label>
+                            <label class="ordering-page-confirm__label">
+                                <input type="radio" name="b">
+                                <span class="ordering-page-confirm__fake">
+
+                                    </span>
+                                <span class="ordering-page-confirm__radio-text">
+Оплата наличными
+                                    </span>
+                            </label>
+                        </div>
+                        <div class="ordering-page-confirm__info">
+                            <div class="ordering-page-confirm__info-title">
+                                Комментарий к заказу
+                            </div>
+                            <textarea name="" id=""
+                                      class="ordering-page-confirm__textarea"
+                                      placeholder="Ваш комментарий"></textarea>
+                        </div>
+                    </form>
+                    <div class="ordering-page-confirm__right">
+                        <div class="ordering-page-confirm-right__title">
+                            Заказ:
+                        </div>
+                        <div class="ordering-page-confirm-right__flex">
+                            <div class="ordering-page-confirm-right__subtitle">
+                                Кол-во:
+                            </div>
+                            <div class="ordering-page-confirm-right__center">
+
+                            </div>
+                            <div class="ordering-page-confirm-right__info">
+                                <span>2 </span>шт.
+                            </div>
+                        </div>
+                        <div class="ordering-page-confirm-right__flex">
+                            <div class="ordering-page-confirm-right__subtitle-spec">
+                                Итого:
+                            </div>
+                            <div class="ordering-page-confirm-right__center">
+
+                            </div>
+                            <div class="ordering-page-confirm-right__info-spec">
+                                <span>26946</span>грн.
+                            </div>
+                        </div>
+                        <button class="ordering-page-confirm-right__btn">
+                            Оформить заказ
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    @include('../catalogue-category/_map-footer.html')
+
+</div>

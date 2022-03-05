@@ -6,7 +6,7 @@
   background: #FFFFFF;
   border-radius: 8px;
   max-width: 656px;
-  z-index: 20;
+  z-index: 21;
   width: 100%;
   display: none;
   &.active{
@@ -174,7 +174,10 @@
       margin-top: 2px;
     }
     .card-page-top-info-buy__btn{
-      width: 138px;
+      width: 160px;
+      @media (max-width:$widthTablet ){
+        width: 138px;
+      }
       @media (max-width:$widthm ){
         width: 49%;
       }

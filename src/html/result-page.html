@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
+<html lang="ru">
+@include('modules/link.html',{ 'title': 'Главная' })
 <body>
-$END$
+@include('modules/header.html', {'mod-class': 'header-lk-user' })
+
+<main class="main">
+    @include('result-page/_result-page.html')
+</main>
+@include('modules/footer.html')
+@include('modules/script.html')
 </body>
 </html>

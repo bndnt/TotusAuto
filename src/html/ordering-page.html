@@ -1,21 +1,13 @@
-<div class="catalogue-category">
-    @include('../components/_filters.html')
-    <nav aria-label="breadcrumb" class="breadcrumb">
-        <div class="container">
-            <div class="breadcrumb-cover">
-                <ul>
-                    <li><a href="">Тотус Авто</a></li>
-                    <span class="span-space">/</span>
-                    <li><span aria-current="current-page" class="current-page">Оформление заказа</span></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    @include('_catalogue-brand-content.html')
-    @include('_catalogue-brand-popup.html')
-    @include('../components/_bg.html')
+<!DOCTYPE html>
+<html lang="ru">
+@include('modules/link.html',{ 'title': 'Главная' })
+<body style="background-color: #FAFAFA;">
+@include('modules/header.html', {'mod-class': 'header-lk-user' })
 
-
-    @include('../catalogue-category/_map-footer.html')
-
-</div>
+<main class="main">
+    @include('ordering-page/_ordering-page.html')
+</main>
+@include('modules/footer.html')
+@include('modules/script.html')
+</body>
+</html>

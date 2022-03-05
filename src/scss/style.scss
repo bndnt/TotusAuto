@@ -11,8 +11,14 @@
 @import 'modules/footer';
 @import 'modules/modals';
 @import 'modules/hamburger';
+@import 'modules/filters-popup-catalogue';
 
 @import 'pages/home/home';
 
 @import 'pages/catalogue-category/catalogue-category';
 @import 'pages/catalogue-brand/catalogue-brand';
+@import 'pages/catalogue-brand/catalogue-brand-popup';
+@import 'pages/card-page/add-product-popup';
+@import 'pages/card-page/card-page';
+@import 'pages/ordering-page/ordering-page';
+@import 'pages/result-page/result-page';

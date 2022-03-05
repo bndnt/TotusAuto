@@ -589,6 +589,15 @@ a {
 }
 .breadcrumb{
   overflow: hidden;
+  &-cover{
+    @media (max-width: $widthm){
+      height: 30px;
+      margin-top: 10px;
+    }
+  }
+  .container{
+
+  }
   li{
     font-size: 12px;
     line-height: 14px;
@@ -603,6 +612,8 @@ a {
     }
     @media (max-width:$widthm){
       overflow-x:scroll;
+      height: 40px;
+      margin-top: -6px;
     }
 
   }
@@ -629,5 +640,17 @@ a {
     line-height: 14px;
     color: #818181;
     white-space: nowrap;
+  }
+}
+
+.bg{
+  &.active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.68);
+    z-index: 20;
   }
 }
