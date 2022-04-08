@@ -29,15 +29,6 @@ if(document.querySelector('.js-filters-catalog')){
         document.body.classList.toggle('hidden');
     })
 }
-if(document.querySelector('.js-catalogue-brand-engine__block')) {
-
-    document.querySelector('.js-catalogue-brand-engine__block').addEventListener('click', function () {
-        document.querySelector('.js-catalogue-brand-popup').classList.toggle('active');
-        document.querySelector('.js-bg').classList.toggle('active');
-        document.body.classList.toggle('hidden');
-
-    })
-}
 
 
 if(document.querySelector('.js-bg')) {
